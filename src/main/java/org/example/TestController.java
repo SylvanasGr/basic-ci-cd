@@ -18,4 +18,12 @@ public class TestController {
         log.info("Total request per session: {}", requestCount++);
         return "App is running! Total request for today: " + requestCount;
     }
+
+    @GetMapping("/update")
+    public String updateDeploy() {
+        final String message = "If this message is showing, it means the CI/CD is correct, the image has been deployed on DockerHub, and running the container was successful :)";
+        log.info(message);
+        return message;
+    }
+
 }
