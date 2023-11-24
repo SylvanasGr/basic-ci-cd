@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: JavaApp
+  main:
+    banner-mode: OFF
+logging:
+  level:
+    root: INFO
+    org.springframework: WARN
